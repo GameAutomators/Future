@@ -1,0 +1,126 @@
+% v2-acmlarge-sample.tex, dated March 6 2012
+% This is a sample file for ACM large trim journals
+%
+% Compilation using 'acmlarge.cls' - version 1.3, Aptara Inc.
+% (c) 2011 Association for Computing Machinery (ACM)
+%
+% Questions/Suggestions/Feedback should be addressed to => "acmtexsupport@aptaracorp.com".
+% Users can also go through the FAQs available on the journal's submission webpage.
+%
+% Steps to compile: latex, bibtex, latex latex
+%
+% \documentclass[prodmode,acmtap]{acmlarge}
+\documentclass[prodmode,gameautomators]{acmlarge}
+
+% Metadata Information
+\acmVolume{2}
+\acmNumber{3}
+\acmArticle{1}
+\articleSeq{1}
+\acmYear{2010}
+\acmMonth{5}
+
+% Package to generate and customize Algorithm as per ACM style
+\usepackage[ruled]{algorithm2e}
+\SetAlFnt{\algofont}
+\SetAlCapFnt{\algofont}
+\SetAlCapNameFnt{\algofont}
+\SetAlCapHSkip{0pt}
+\IncMargin{-\parindent}
+\renewcommand{\algorithmcfname}{ALGORITHM}
+
+% Page heads
+\markboth{Sudheesh S, Damini S and Surya P}{The Future of Game Automators - Projects, Research and Execution}
+
+% Title portion
+\title{The Future of Game Automators - Projects, Research and Execution}
+\author{SUDHEESH SINGANAMALLA \affil{Microsoft Research}
+DAMINI SATYA \affil{Salesforce}
+SURYA PENMETSA \affil{Neva Ventures}
+}
+% NOTE! Affiliations placed here should be for the institution where the
+%       BULK of the research was done. If the author has gone to a new
+%       institution, before publication, the (above) affiliation should NOT be changed.
+%       The authors 'current' address may be given in the "Author's addresses:" block (below).
+%       So for example, Mr. Fogarty, the bulk of the research was done at UIUC, and he is
+%       currently affiliated with NASA.
+
+\begin{abstract}
+Game Automators is an open source organization that is dedicated to building tools and engage student and practitioner communities to share new and innovative ways of using computer and mobile games in a fashion that complement with the university education.
+
+Making learning fun is extremely important and such learning could prove to be a major motivator for a lot more students to take up STEM courses and careers in technology. Access to quality education is still a distant reality for a large section of the population, however with the increase in smart phone penetration, learning content is now available at their fingertips in the form of MOOCs and other open course ware. However, theory and practice applied together have proven to deliver higher learning retention rate and increased interest in the area. The aim of Game Automators is to apply the content in courses of machine learning, computer vision, electronics etc.., to automate the game play in mobile and desktop games.
+\end{abstract}
+
+\category{H.5.2}{Information Interfaces and Presentation}{User Interfaces}[Evaluation/\break methodology]
+\category{H.1.2}{Models and Principles}{User/Machine Systems}[Human Information Processing]
+\category{I.5.1}{Pattern\break Recognition}{Models}[Neural Nets]
+
+% \terms{Human Factors}
+% \keywords{Contour perception, flow visualization, perceptual theory, visual cortex, visualization}
+
+% \acmformat{Daniel Pineo, Colin Ware, and Sean Fogarty. 2010. Neural Modeling of Flow Rendering Effectiveness.}
+% At a minimum you need to supply the author names, year and a title.
+% IMPORTANT:
+% Full first names whenever they are known, surname last, followed by a period.
+% In the case of two authors, 'and' is placed between them.
+% In the case of three or more authors, the serial comma is used, that is, all author names
+% except the last one but including the penultimate author's name are followed by a comma,
+% and then 'and' is placed before the final author's name.
+% If only first and middle initials are known, then each initial
+% is followed by a period and they are separated by a space.
+% The remaining information (journal title, volume, article number, date, etc.) is 'auto-generated'.
+
+\begin{document}
+
+% \begin{bottomstuff}
+% This work is supported by the Widget Corporation Grant \#312-001.\\
+% Author's address: D. Pineo, Kingsbury Hall, 33 Academic Way, Durham,
+% N.H. 03824; email: dspineo@comcast.net; Colin Ware, Jere A. Chase
+% Ocean Engineering Lab, 24 Colovos Road, Durham, NH 03824; email: cware@ccom.unh.edu;
+% Sean Fogarty, (Current address) NASA Ames Research Center, Moffett Field, California 94035.
+% \end{bottomstuff}
+
+
+\maketitle
+
+% Head 1
+\section{Upcoming Projects}
+
+Game Automators strives to use open source programming languages as far as possible and automate mobile and computer games using concepts from subjects in computer science, electronics etc.., Making learning fun is an integral part of education and is an important factor in keeping the learner interested and further pursue their interests. Game Automators had initially started as a method to learn and share the learning of automating mobile games. The learners were initially students who had never programmed with either Matlab or Python and had little to no experience with computer vision, machine learning or using electronics and building the circuits. The program over 1 month resulted in the students learning these tools and experimenting their skills by automating simple mobile games. Further open source involvement resulted in more games being automated. Game Automation has proven to be a very interesting way to capture the students' attention to crucial subjects while at the same time allowing the student the creative freedom to explore different algorithms which could aid them in playing the game. However, the process has been very unstructured and needs strong community building reforms and applications to showcase the community creativity. At the same time, the interest for automation exposes open opportunities in the field of automation and teaching curricula to get together and build a framework that can be used for performing the game automation.
+
+\subsection{Game Automation Framework built on top of Scratch }
+
+Game Automators has been a major accomplishment in the last summer and resulted in the release of a book and teaching image processing and computer vision to students and then go ahead and automate their own games. How would it be if every person could just connect their phone to their computer and run the code through a framework that does this. The aim of the project is to build such a framework and enable remote non USB based automation and providing Android with the community to automate UI testing of Android.
+
+\begin{enumerate}
+    \item {Features}
+    \begin{enumerate}
+        \item {Plugin a device into the laptop or desktop}
+        \item {Enable the screen view on the desktop}
+        \item {Show a scratch like UI with custom blockly object blocks which convert into underlying python code to execute on the android device using the ADB/instruments debugger.}
+        \item {Play and record the entire automation or execute step by step executions like a Jupyter notebook.}
+        \item {Ability for users to create equivalents of Kernels as on Kaggle}
+        \item {Wireless connections to mobile devices and device screens}
+        \item {Cloud based mobile device for downloading an App image and testing}
+    \end{enumerate}
+\end{enumerate}
+
+\subsection{Community Playground and Discussion Forum}
+
+As the community becomes bigger, it becomes important to maintain and showcase all the amazing things that the members of the community have been building. This opens up opportunities for the project above to be interfaced and used here as a common playground where people could see the creations and the code along with the video or an asciinema equivalent execution of the automation on the device. The project should have the following features
+
+\begin{enumerate}
+    \item {Features}
+    \begin{enumerate}
+        \item {User accounts and dashboard}
+        \item {Device tracking and video storage}
+        \item {Informing metadata about the creation creatively}
+        \item {Showcasing the mobile phone type and running the video in that space}
+        \item {CLI Tools to interface and record automation from Project 1}
+        \item {Ability to fork a creation and build on top of it}
+        \item {Wiki and format for retrieving instructions to setup to build documentation}
+    \end{enumerate}
+\end{enumerate}
+
+\end{document}
+% End of v2-acmlarge-sample.tex (March 2012) - Gerry Murray, ACM
